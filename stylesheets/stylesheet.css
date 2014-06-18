@@ -4,7 +4,7 @@
 body {
   margin: 0;
   padding: 0;
-  background: #778899;
+  background: #778899 0 url("../images/bkg.png") 0;
   color: #778899;
   font: 16px;
   line-height: 1.5;
@@ -14,7 +14,7 @@ body {
 /* General & 'Reset' Stuff */
 
 .container {
-  width: 90%;
+  width: 50%;
   max-width: 600px;
   margin: 0 auto;
 }
