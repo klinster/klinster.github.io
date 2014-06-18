@@ -4,7 +4,7 @@
 body {
   margin: 0;
   padding: 0;
-  background: #778899 0 0 url("../images/bkg.png");
+  background: #778899 url("../images/bkg.png") 0 0;
   color: #778899;
   font: 16px;
   line-height: 1.5;
