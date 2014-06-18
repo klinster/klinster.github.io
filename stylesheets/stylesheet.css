@@ -4,7 +4,7 @@
 body {
   margin: 0;
   padding: 0;
-  background: #151515;
+  background: #151515 url("../images/bkg.png") 0 0;
   color: #eaeaea;
   font: 16px;
   line-height: 1.5;
@@ -15,7 +15,6 @@ body {
 
 .container {
   width: 50%;
-  background: #151515 url("../images/bkg.png") 0 0;
   max-width: 600px;
   margin: 0 auto;
 }
@@ -40,7 +39,7 @@ li {
 */
 
 header {
-  background: rgba(0, 0, 0, 2);
+  background: rgba(0, 0, 0, 5);
   width: 100%;
   border-bottom: 1px dashed #b5e853;
   padding: 20px 0;
@@ -62,12 +61,7 @@ header h1 {
 }
 
 header h1:before {
-  content: "</ ";
-  font-size: 24px;
-}
-
-header h1:after {
-  content: ">";
+  content: "./";
   font-size: 24px;
 }
 
