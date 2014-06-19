@@ -1,5 +1,6 @@
 body {
 	font-family: 'Roboto', serif;
+	background-color: #F0F0F0;
 }
 
 ul {
@@ -26,4 +27,7 @@ a:link {
 }
 a:visited {
 	color: #780000
+}
+a:hover, a:active {
+	background-color: #C8C8C8 
 }
