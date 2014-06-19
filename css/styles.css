@@ -10,23 +10,14 @@ ul {
 	overflow: hidden;
 }
 
-li {
-	float: none;
-}
-
 a:link {
 	display: block;
 	width: 120px;
 	font-weight: bold;
-	color: #66CCCC;
+	color: #FFFFFF;
+	background-color: #C8C8C8
 	text-align: center;
 	padding: 4px;
 	text-decoration: none;
 	text-transform: uppercase;
-}
-a:visited {
-	color: #FFFFFF
-}
-a:hover, a:active {
-	background-color: #C8C8C8
 }
