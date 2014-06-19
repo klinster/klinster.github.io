@@ -33,6 +33,12 @@ li {
   line-height: 1.4 ;
 }
 
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
 /* Header, <header>
    header   - container
    h1       - project name
