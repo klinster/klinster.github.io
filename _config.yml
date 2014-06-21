@@ -3,7 +3,7 @@ title: klinster
 username: klinster
 email: contact@klinster.com
 description: ""
-baseurl: ""
+baseurl:
 url: "http://klinster.net"
 paginate: 5
 permalink: /blog/:title
