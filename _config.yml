@@ -1,0 +1,13 @@
+# Site settings
+title: klinster
+username: klinster
+email: contact@klinster.com
+description: ""
+baseurl: ""
+url: "http://klinster.net"
+paginate: 5
+permalink: /blog/:title
+
+# Build settings
+markdown: kramdown
+permalink: pretty

@@ -1,53 +1,23 @@
-<!DOCTYPE html>
-<html>
-  <head>
+---
+layout: default
+---
 
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
-    <link rel ="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Roboto+Condensed">
+<div class="home">
 
-    <title>klinster</title>
-  </head>
+  <h1>Recent Posts</h1>
 
-  <body>
+  {% for about in site.about%}
+  {% endfor %}
 
-    <header>
-      <div class="container">
-        <h1>klinster's</h1>
-        <h2>Playground</h2>
-    </div>
-    <ul>
-      <li><a href=".">Home</a></li>
-      <li><a href="./portfolio">Portfolio</a></li>
-      <li><a href="./about">About</a></li>
-      </ul>
-  </header>
+  <ul class="posts">
+    {% for post in site.posts %}
+      <li>
+        <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
+        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+      </li>
+    {% endfor %}
+  </ul>
 
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
 
-        <center>
-        <h3><a href="./portfolio">Hi I'm klinster</a></h3>
-
-<p>This page is currently underdevelopment</p>
-</center>
-
-              <script type="text/javascript">
-            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-          </script>
-          <script type="text/javascript">
-            try {
-              var pageTracker = _gat._getTracker("UA-52059311-1");
-            pageTracker._trackPageview();
-            } catch(err) {}
-          </script>
-
-        <footer>
-        <div class ="downloads">
-          <a href="https://github.com/klinster" class="btn btn-github"><span class="icon"></span>GitHub</a>
-        </section>
-      </div>
-    </footer>
-
-  </body>
-</html>
+</div>
