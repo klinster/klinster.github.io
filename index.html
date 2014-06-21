@@ -1,25 +1,14 @@
-<<<<<<< HEAD
 ---
 layout: default
 ---
 
 <div class="home">
-=======
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <link rel ="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Roboto+Condensed">
-    <link rel ="stylesheet" type="text/css" href="/css/styles.css">
->>>>>>> FETCH_HEAD
 
   <h1>Recent Posts</h1>
 
   {% for about in site.about%}
   {% endfor %}
 
-<<<<<<< HEAD
   <ul class="posts">
     {% for post in site.posts %}
       <li>
@@ -32,35 +21,3 @@ layout: default
   <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
 
 </div>
-=======
-    <header>
-        <h1>klinster's</h1>
-        <h2>Playground</h2>
-  </header>
-    <ul>
-      <li><a href=".">Home</a></li>
-      <!-- <li><a href="./portfolio">Portfolio</a></li> -->
-      <li><a href="./about">About</a></li>
-      <lI><a href="https://github.com/klinster">Github</a>
-      </li>
-    </ul>
-
-        <center>
-        <h3>Hi I'm klinster</h3>
-
-<p>This page is currently underdevelopment</p>
-</center>
-
-              <script type="text/javascript">
-            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-          </script>
-          <script type="text/javascript">
-            try {
-              var pageTracker = _gat._getTracker("UA-52059311-1");
-            pageTracker._trackPageview();
-            } catch(err) {}
-          </script>
-  </body>
-</html>
->>>>>>> FETCH_HEAD
