@@ -1,4 +1,4 @@
 klinster.github.io
 ==================
 
-Personal site for klinster, University student from California
+A personal site located at http://klinster.net
