@@ -6,7 +6,6 @@ description: ""
 baseurl:
 url: "http://klinster.net"
 paginate: 5
-permalink: /blog/:title
 
 # Build settings
 markdown: kramdown
