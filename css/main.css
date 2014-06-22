@@ -94,31 +94,31 @@ a:visited { color: #205caa; }
   width: -moz-calc(10% - 10px);
   width: -o-calc(10% - 10px);
   width: calc(10% - 10px);
-  margin-right: 300px
+  margin-right: 450px
 }
 .footer-col-2 {
   width: 150px; /*fallback*/
-  width: -webkit-calc(12% - 10px);
-  width: -moz-calc(12% - 10px);
-  width: -o-calc(12% - 10px);
-  width: calc(12% - 10px);
+  width: -webkit-calc(8% - 10px);
+  width: -moz-calc(8% - 10px);
+  width: -o-calc(8% - 10px);
+  width: calc(8% - 10px);
   margin-right: 1px
 }
 .footer-col-3 {
   width: 275px; /*fallback*/
-  width: -webkit-calc(12% - 10px);
-  width: -moz-calc(12% - 10px);
-  width: -o-calc(12% - 10px);
-  width: calc(12% - 10px);
+  width: -webkit-calc(7% - 10px);
+  width: -moz-calc(7% - 10px);
+  width: -o-calc(7% - 10px);
+  width: calc(7% - 10px);
   margin-right: 1px;
 }
 
 .footer-col-4 {
   width: 300px; /*fallback*/
-  width: -webkit-calc(12% - 10px);
-  width: -moz-calc(12% - 10px);
-  width: -o-calc(12% - 10px);
-  width: calc(12% - 10px);
+  width: -webkit-calc(9% - 10px);
+  width: -moz-calc(9% - 10px);
+  width: -o-calc(9% - 10px);
+  width: calc(9% - 10px);
   margin-right: 1px;
 }
 
