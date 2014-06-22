@@ -90,35 +90,44 @@ a:visited { color: #205caa; }
 
 .footer-col-1 {
   width: 125px; /*fallback*/
-  width: -webkit-calc(15% - 10px);
-  width: -moz-calc(15% - 10px);
-  width: -o-calc(15% - 10px);
-  width: calc(15% - 10px);
-  margin-right: 10px
+  width: -webkit-calc(10% - 10px);
+  width: -moz-calc(10% - 10px);
+  width: -o-calc(10% - 10px);
+  width: calc(10% - 10px);
+  margin-right: 300px
 }
 .footer-col-2 {
   width: 150px; /*fallback*/
-  width: -webkit-calc(15% - 10px);
-  width: -moz-calc(15% - 10px);
-  width: -o-calc(15% - 10px);
-  width: calc(15% - 10px);
-  margin-right: 10px
+  width: -webkit-calc(12% - 10px);
+  width: -moz-calc(12% - 10px);
+  width: -o-calc(12% - 10px);
+  width: calc(12% - 10px);
+  margin-right: 1px
 }
 .footer-col-3 {
   width: 275px; /*fallback*/
-  width: -webkit-calc(15% - 10px);
-  width: -moz-calc(15% - 10px);
-  width: -o-calc(15% - 10px);
-  width: calc(15% - 10px);
-  margin-right: 10px;
+  width: -webkit-calc(12% - 10px);
+  width: -moz-calc(12% - 10px);
+  width: -o-calc(12% - 10px);
+  width: calc(12% - 10px);
+  margin-right: 1px;
 }
 
 .footer-col-4 {
   width: 300px; /*fallback*/
-  width: -webkit-calc(15% - 10px);
-  width: -moz-calc(15% - 10px);
-  width: -o-calc(15% - 10px);
-  width: calc(15% - 10px);
+  width: -webkit-calc(12% - 10px);
+  width: -moz-calc(12% - 10px);
+  width: -o-calc(12% - 10px);
+  width: calc(12% - 10px);
+  margin-right: 1px;
+}
+
+.footer-col-5 {
+  width: 315px; /*fallback*/
+  width: -webkit-calc(10% - 10px);
+  width: -moz-calc(10% - 10px);
+  width: -o-calc(10% - 10px);
+  width: calc(10% - 10px);
 }
 
 .site-footer a{ color: #828282;}
@@ -348,7 +357,7 @@ a:visited { color: #205caa; }
   .footer-col-1 { width: 50%; }
 
   .footer-col-2 {
-    width: 45%; /*fallback*/
+    width: 10%; /*fallback*/
     width: -webkit-calc(50% - 10px);
     width: -moz-calc(50% - 10px);
     width: -o-calc(50% - 10px);
@@ -359,7 +368,16 @@ a:visited { color: #205caa; }
   .footer-col-3{ width: 50%;}
 
   .footer-col-4 {
-    width: 45%; /*fallback*/
+    width: 10%; /*fallback*/
+    width: -webkit-calc(50% - 10px);
+    width: -moz-calc(50% - 10px);
+    width: -o-calc(50% - 10px);
+    width: calc(50% - 10px);
+    margin-right: 0;    
+  }
+
+    .footer-col-5 {
+    width: 10%; /*fallback*/
     width: -webkit-calc(50% - 10px);
     width: -moz-calc(50% - 10px);
     width: -o-calc(50% - 10px);
