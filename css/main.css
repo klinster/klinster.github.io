@@ -41,7 +41,6 @@ a:visited { color: #205caa; }
 /* Site header */
 
 .site-header, {
-  border-bottom: 2px solid #2a7ae2;
   min-height: 56px;
 }
 
