@@ -1,0 +1,24 @@
+<header>
+  <nav class="indigo lighten-2" role="navigation">
+    <div class="nav-wrapper container">
+      <a href="/" class="brand-logo">{{ site.title }}</a>
+      <a href="#" data-activates="mobile-menu" class="button-collapse"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+        {% for my_page in site.pages %}
+          {% if my_page.title %}
+          <li><a href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title | escape }}</a></li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+      <ul class="side-nav" id="mobile-menu">
+        {% for my_page in site.pages %}
+          {% if my_page.title %}
+          <li><a href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title | escape }}</a></li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+    </div>
+  </nav>
+</header>
+<br>
+<br>
