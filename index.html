@@ -7,6 +7,8 @@
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/devicons/1.8.0/css/devicons.min.css">
   <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
   <!-- Compiled and minified JavaScript -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
@@ -14,7 +16,7 @@
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
     m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
     ga('create', 'UA-52059311-1', 'auto');
     ga('send', 'pageview');
@@ -32,17 +34,24 @@
         <li><a href="posts.html">Posts</a></li>
       </ul>
       <ul class="side-nav" id="mobile-menu">
-        <li><a href="about.html">About</a></li>
-        <li><a href="posts.html">Posts</a></li>
+        <li><div class="userView">
+          <img class="background" src="imgs/office.jpg"/>
+          <a href="#!user"><img class="circle z-depth-3" src="imgs/profile.png"></a>
+          <a href="#!name"><span class="white-text name">klinster</span></a>
+          <a href="mailto:contact@klinster.net"><span class="white-text email">contact@klinster.net</span></a>
+        </div></li>
+        <li><div class="divider"></div></li>
+        <li><a class="waves-effect indigo lighten-2" href="about.html"><span class="white-text">About</span></a></li>
+        <li><a class="waves-effect indigo lighten-2" href="posts.html"><span class="white-text">Posts</span></a></li>
       </ul>
     </div>
   </nav>
 </header>
-<main>
 
 <br>
 <br>
 
+<main aria-label="Content">
 <div class="row container">
   <div class="col s12 center-align">
     <h4>Introduction</h4>
@@ -53,9 +62,88 @@
   <div class="card-panel">
     <p class="grey-text text-darken-3 lighten-3">
       Hello! I'm a recent Computer Science graduate from the Los Angeles area.
-      I currently work as a Web Developer and Quality Assurance for CSUN META+Lab using the Laravel
+      I currently work as a Web Developer and QA for CSUN META+Lab using the Laravel
       framework.
     </p>
+  </div>
+</div>
+
+<br>
+<br>
+
+<div class="row container">
+  <div class="col s12 center-align">
+    <h4>Education</h4>
+  </div>
+</div>
+
+<div class="row container">
+  <div class="col s6">
+    <div class="card small">
+      <div class="card-image waves-effect waves-block waves-light">
+        <img class="activator" src="imgs/banner_identity02.png" alt="California State University Northridge Logo">
+      </div>
+      <div class="card-content">
+        <span class="card-title activator grey-text text-darken-4">CSUN<i class="material-icons right">more_vert</i></span>
+        <p><a class="indigo-text" href="http://www.csun.edu/">Visit CSUN</a></p>
+      </div>
+      <div class="card-reveal">
+        <span class="card-title grey-text text-darken-4">CSUN<i class="material-icons right">close</i></span>
+        <p>
+          Located in the heart of the San Fernando Valley, California State University, Northridge is home of the Matadors.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="col s6">
+    <div class="card">
+      <div class="card-content">
+        <span class="card-title black-text"><strong>Bachelor of Science, Computer Science</strong></span>
+        <br>
+        <small>
+          August 2013 - May 2016
+        </small>
+        <p>
+          Completed my Degree in Computer Science
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<br>
+
+<div class="row container">
+  <div class="col s6">
+    <div class="card">
+      <div class="card-content">
+        <span class="card-title black-text"><strong>General Education</strong></span>
+        <br>
+        <small>
+          August 2005 - May 2013
+        </small>
+        <p>
+          Completed my General Education where I focused on Mathematics and Computer Science
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="col s6">
+    <div class="card small">
+      <div class="card-image waves-effect waves-block waves-light">
+        <img class="activator" src="imgs/gcc_logo_red.png" alt="Glendale Community College Logo">
+      </div>
+      <div class="card-content">
+        <span class="card-title activator grey-text text-darken-4">Glendale Community College<i class="material-icons right">more_vert</i></span>
+        <p><a class="indigo-text" href="http://www.glendale.edu">Visit GCC</a></p>
+      </div>
+      <div class="card-reveal">
+        <span class="card-title grey-text text-darken-4">Glendale Community College<i class="material-icons right">close</i></span>
+        <p>
+           A beautiful campus, nestled in the hillside overlooking Glendale
+        </p>
+      </div>
+    </div>
   </div>
 </div>
 
@@ -70,29 +158,29 @@
 
 <div class="row container">
   <div class="col s4 center-align z-depth-1 white">
-    <h2><span class="devicons devicons-laravel indigo-text"> </span></h2>
-    <p class="indigo-text">
+    <h2><span class="devicons devicons-laravel"> </span></h2>
+    <p>
       70%
     </p>
-    <div class="progress">
+    <div class="progress indigo lighten-4">
       <div class="determinate indigo" style="width: 70%"></div>
   </div>
   </div>
   <div class="col s4 center-align z-depth-1 white">
-    <h2><span class="devicons devicons-css3 indigo-text"> </span></h2>
-    <p class="indigo-text">
+    <h2><span class="devicons devicons-css3"> </span></h2>
+    <p>
       50%
     </p>
-    <div class="progress">
+    <div class="progress indigo lighten-4">
       <div class="determinate indigo" style="width: 50%"></div>
   </div>
   </div>
   <div class="col s4 center-align z-depth-1 white">
-    <h2><span class="devicons devicons-html5 indigo-text"> </span></h2>
-    <p class="indigo-text">
+    <h2><span class="devicons devicons-html5"> </span></h2>
+    <p>
       50%
     </p>
-    <div class="progress">
+    <div class="progress indigo lighten-4">
       <div class="determinate indigo" style="width: 50%"></div>
   </div>
   </div>
@@ -100,29 +188,29 @@
 
 <div class="row container">
   <div class="col s4 center-align z-depth-1 white">
-    <h2><span class="devicons devicons-java indigo-text"> </span></h2>
-    <p class="indigo-text">
+    <h2><span class="devicons devicons-java"> </span></h2>
+    <p>
       65%
     </p>
-    <div class="progress">
+    <div class="progress indigo lighten-4">
       <div class="determinate indigo" style="width: 65%"></div>
     </div>
   </div>
   <div class="col s4 center-align z-depth-1 white">
-    <h2><span class="devicons devicons-mysql indigo-text"> </span></h2>
-    <p class="indigo-text">
+    <h2><span class="devicons devicons-mysql"> </span></h2>
+    <p>
       60%
     </p>
-    <div class="progress">
+    <div class="progress indigo lighten-4">
       <div class="determinate indigo" style="width: 60%"></div>
     </div>
   </div>
   <div class="col s4 center-align z-depth-1 white">
-    <h2><span class="devicons devicons-php indigo-text"> </span></h2>
-    <p class="indigo-text">
+    <h2><span class="devicons devicons-php"> </span></h2>
+    <p>
       60%
     </p>
-    <div class="progress">
+    <div class="progress indigo lighten-4">
       <div class="determinate indigo" style="width: 60%"></div>
     </div>
   </div>
@@ -130,29 +218,29 @@
 
 <div class="row container">
   <div class="col s4 center-align z-depth-1 white">
-    <h2><span class="devicons devicons-android indigo-text"> </span></h2>
-    <p class="indigo-text">
+    <h2><span class="devicons devicons-android"> </span></h2>
+    <p>
       60%
     </p>
-    <div class="progress">
+    <div class="progress indigo lighten-4">
       <div class="determinate indigo" style="width: 60%"></div>
     </div>
   </div>
   <div class="col s4 center-align z-depth-1 white">
-    <h2><span class="devicons devicons-linux indigo-text"> </span></h2>
-    <p class="indigo-text">
+    <h2><span class="devicons devicons-linux"> </span></h2>
+    <p>
       65%
     </p>
-    <div class="progress">
+    <div class="progress indigo lighten-4">
       <div class="determinate indigo" style="width: 65%"></div>
     </div>
   </div>
   <div class="col s4 center-align z-depth-1 white">
-    <h2><span class="devicons devicons-ubuntu indigo-text"> </span></h2>
-    <p class="indigo-text">
+    <h2><span class="devicons devicons-ubuntu"> </span></h2>
+    <p>
       70%
     </p>
-    <div class="progress">
+    <div class="progress indigo lighten-4">
       <div class="determinate indigo" style="width: 70%"></div>
     </div>
   </div>
@@ -170,12 +258,12 @@
 <div class="row container">
   <div class="col s6">
     <div class="card">
-      <div class="card-content indigo-text">
-        <span class="card-title black-text"><b>Developer and Quality Assurance</b></span>
+      <div class="card-content">
+        <span class="card-title black-text"><strong>Developer and QA</strong></span>
         <br>
-        <sup>
+        <small>
           Late June 2016 - Present
-        </sup>
+        </small>
         <p>In charge of building the sustaining team, as well as develop the development workflow for all of META+Lab</p>
       </div>
     </div>
@@ -183,11 +271,11 @@
   <div class="col s6">
     <div class="card small">
       <div class="card-image waves-effect waves-block waves-light">
-        <img class="activator" src="imgs/meta+lab.png">
+        <img class="activator" src="imgs/meta+lab.png" alt="Meta Lab image">
       </div>
       <div class="card-content">
         <span class="card-title activator grey-text text-darken-4">META+Lab<i class="material-icons right">more_vert</i></span>
-        <p><a class="indigo-text" href="http://www.metalab.csun.edu">Learn More</a></p>
+        <p><a class="indigo-text" href="http://www.metalab.csun.edu">Visit META+Lab</a></p>
       </div>
       <div class="card-reveal">
         <span class="card-title grey-text text-darken-4">META+Lab<i class="material-icons right">close</i></span>
@@ -196,6 +284,8 @@
     </div>
   </div>
 </div>
+
+<br>
 
 <div class="row container">
   <div class="col s12 center-align">
@@ -207,15 +297,15 @@
   <div class="col s6">
     <div class="card small">
       <div class="card-image waves-effect waves-block waves-light">
-        <img class="activator" src="imgs/smartmirror.png">
+        <img class="activator" src="imgs/smartmirror.png" alt="Smart Mirror image">
       </div>
       <div class="card-content">
         <span class="card-title activator grey-text text-darken-4">SmartMirror<i class="material-icons right">more_vert</i></span>
-        <p><a class="indigo-text" href="https://github.com/omgshirt/smartmirror">Learn More</a></p>
+        <p><a class="indigo-text" href="https://github.com/omgshirt/smartmirror">Visit SmartMirror</a></p>
       </div>
       <div class="card-reveal">
         <span class="card-title grey-text text-darken-4">SmartMirror<i class="material-icons right">close</i></span>
-        <p class="indigo-text">
+        <p>
           An information appliance using an Android tablet as the brains of the operation.
         </p>
       </div>
@@ -223,12 +313,12 @@
   </div>
   <div class="col s6">
     <div class="card">
-      <div class="card-content indigo-text">
-        <span class="card-title black-text"><b>Scrum Master & Developer</b></span>
+      <div class="card-content">
+        <span class="card-title black-text"><strong>Scrum Master & Developer</strong></span>
         <br>
-        <sup>
+        <small>
           October 2015 - May 2016
-        </sup>
+        </small>
         <p>
           An 8 month project that was made for my Senior Design class in which I was Scrum Master, developer and in charge of the git repository.
         </p>
@@ -238,18 +328,16 @@
 </div>
 
 <br>
-<br>
-
 
 <div class="row container">
   <div class="col s6">
     <div class="card">
-      <div class="card-content indigo-text">
-        <span class="card-title black-text"><b>Programming & Video Editor</b></span>
+      <div class="card-content">
+        <span class="card-title black-text"><strong>Programming & Video Editor</strong></span>
         <br>
-        <sup>
+        <small>
           February 2015
-        </sup>
+        </small>
         <p>
           Implemented some Material Design aspects to the user interface, tweaked the functionality for the font assets, as well as create the promotional YouTube video.
         </p>
@@ -259,11 +347,11 @@
   <div class="col s6">
     <div class="card small">
       <div class="card-image waves-effect waves-block waves-light">
-        <img class="activator" src="imgs/beard.png">
+        <img class="activator" src="imgs/beard.png" alt="Zooper by Beard image">
       </div>
       <div class="card-content">
         <span class="card-title activator grey-text text-darken-4">Zooper Widgets by BEARD<i class="material-icons right">more_vert</i></span>
-        <p><a class="indigo-text" href="http://www.youtube.com/watch?v=NcPaEqkYqsg">Learn More</a></p>
+        <p><a class="indigo-text" href="http://www.youtube.com/watch?v=NcPaEqkYqsg">Visit Zooper by Beard</a></p>
       </div>
       <div class="card-reveal">
         <span class="card-title grey-text text-darken-4">Zooper Widgets by BEARD<i class="material-icons right">close</i></span>
@@ -275,6 +363,8 @@
   </div>
 </div>
 
+<br>
+
 <div class="row container">
   <div class="col s6">
     <div class="card small">
@@ -283,7 +373,7 @@
       </div>
       <div class="card-content">
         <span class="card-title activator grey-text text-darken-4">ADW.Launcher / ADW.Launcher EX<i class="material-icons right">more_vert</i></span>
-        <p><a class="indigo-text" href="http://adwthings.com/launcher/">Learn More</a></p>
+        <p><a class="indigo-text" href="http://adwthings.com/launcher/">Visit ADW.Launcher</a></p>
       </div>
       <div class="card-reveal">
         <span class="card-title grey-text text-darken-4">ADW.Launcher / ADW.Launcher EX<i class="material-icons right">close</i></span>
@@ -295,12 +385,12 @@
   </div>
   <div class="col s6">
     <div class="card">
-      <div class="card-content indigo-text">
-        <span class="card-title black-text"><b>Video Editor & Consulting</b></span>
+      <div class="card-content">
+        <span class="card-title black-text"><strong>Video Editor & Consulting</strong></span>
         <br>
-        <sup>
+        <small>
           August 2012 - January 2013
-        </sup>
+        </small>
         <p>
           In charge of editing and filming the promotional video of the application,
           gave creative input for the user interface as well as help motivate a more
@@ -310,10 +400,6 @@
     </div>
   </div>
 </div>
-
-<br>
-<br>
-
 </main>
 
 <br>
@@ -323,13 +409,13 @@
   <div class="row container">
     <div class="col s12 center-align">
       <a class="white-text" href="https://twitter.com/klinster">
-        twitter
+        <i class="fa fa-twitter fa-2x" aria-hidden="true"></i>
       </a>
       <a class="white-text" href="https://github.com/klinster">
-        github
+        <i class="fa fa-github fa-2x" aria-hidden="true"></i>
       </a>
       <a class="white-text" href="mailto:contact@klinster.net">
-        email
+        &nbsp;<i class="fa fa-envelope fa-2x" aria-hidden="true"></i>
       </a>
     </div>
   </div>
