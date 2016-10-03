@@ -1,7 +1,7 @@
 <header>
   <nav class="indigo lighten-2" role="navigation">
     <div class="nav-wrapper container">
-      <a href="/" class="brand-logo">{{ site.title }}</a>
+      <a href="{{ site.baseurl }}/" class="brand-logo">{{ site.title }}</a>
       <a href="#" data-activates="mobile-menu" class="button-collapse"><i class="material-icons">menu</i></a>
       <ul class="right hide-on-med-and-down">
         {% for my_page in site.pages %}
@@ -13,8 +13,8 @@
       <ul class="side-nav" id="mobile-menu">
         <li><div class="userView">
           <img class="background" src="http://materializecss.com/images/office.jpg">
-          <a href="#!user"><img class="circle z-depth-3" src="http://materializecss.com/images/yuna.jpg"></a>
-          <a href="/"><span class="white-text name">{{ site.user_name }}</span></a>
+          <a href="#!user"><img class="circle z-depth-3" src="{{ site.baseurl }}/imgs/profile.png"></a>
+          <a href="{{ site.baseurl }}/"><span class="white-text name">{{ site.user_name }}</span></a>
           <a href="mailto:{{ site.email }}"><span class="white-text email">{{ site.email }}</span></a></div></li>
         {% for my_page in site.pages %}
           {% if my_page.title %}
@@ -25,5 +25,3 @@
     </div>
   </nav>
 </header>
-<br>
-<br>
