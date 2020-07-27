@@ -16,81 +16,32 @@
             -ms-user-select: none;
             user-select: none;
         }
-
         .jumbotron {
             padding-top: 3rem;
             padding-bottom: 3rem;
             margin-bottom: 0;
         }
-
-        .product-device {
-            position: absolute;
-            right: 10%;
-            bottom: -30%;
-            width: 300px;
-            height: 540px;
-            background-color: #333;
-            border-radius: 21px;
-            -webkit-transform: rotate(30deg);
-            transform: rotate(30deg);
-        }
-
-        .product-device::before {
-            position: absolute;
-            top: 10%;
-            right: 10px;
-            bottom: 10%;
-            left: 10px;
-            content: "";
-            background-color: rgba(255, 255, 255, .1);
-            border-radius: 5px;
-        }
-
-        .product-device-2 {
-            top: -25%;
-            right: auto;
-            bottom: 0;
-            left: 5%;
-            background-color: #e5e5e5;
-        }
-
-        .flex-equal>* {
-            -ms-flex: 1;
-            flex: 1;
-        }
-
         .jumbotron p:last-child {
             margin-bottom: 0;
         }
-
         .jumbotron h1 {
             font-weight: 300;
         }
-
         .jumbotron .container {
             max-width: 40rem;
         }
-
         footer {
             padding-top: 3rem;
             padding-bottom: 3rem;
         }
-
         footer p {
             margin-bottom: .25rem;
         }
-
         @media (min-width: 768px) {
-            .flex-md-equal>* {
-                -ms-flex: 1;
-                flex: 1;
-            }
-
             .jumbotron {
                 padding-top: 6rem;
                 padding-bottom: 6rem;
             }
-
             .bd-placeholder-img-lg {
                 font-size: 3.5rem;
             }
@@ -123,7 +74,7 @@
                             <a class="nav-link" href="#about-me">About Me</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#contact">Contact</a>
+                            <a class="nav-link" href="#contact-us">Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -145,7 +96,7 @@
 
         <div id="our-services" class="album py-5 bg-light">
             <div class="container">
-                <h2 class="h1 text-center text-dark">Our Services</h2>
+                <h2 class="h1 text-center text-dark pb-5">Our Services</h2>
                 <div class="row">
                     <div class="col-md-4">
                         <div class="card mb-4 shadow-sm">
@@ -189,7 +140,7 @@
 
         <div id="testimonials" class="bg-dark py-5 text-center">
             <div class="container">
-                <h2 class="h1">Testimonials</h2>
+                <h2 class="h1 pb-5">Testimonials</h2>
                 <div class="row">
                     <div class="col-md-4">
                         <div class="card mb-4 bg-transparent border-0">
@@ -248,27 +199,26 @@
                 </div>
             </div>
         </div>
-
-    </main>
-
-    <!-- <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3"> -->
-        <!-- <div class="bg-dark mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
-            <div class="my-3 py-3">
-                <h2 class="display-5">Another headline</h2>
-                <p class="lead">And an even wittier subheading.</p>
+        <div id="contact-us" class="container py-5">
+          <h2 class="h1 text-center pb-5">Contact Us</h2>
+          <form>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" class="form-control" id="email" placeholder="example@email.com">
             </div>
-            <div class="bg-light shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" class="form-control" id="subject" placeholder="Enter your subject here.">
             </div>
-        </div> -->
-        <!-- <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-            <div class="my-3 p-3">
-                <h2 class="display-5">Another headline</h2>
-                <p class="lead">And an even wittier subheading.</p>
+            <div class="form-group">
+              <label for="body">Body</label>
+              <textarea class="form-control" placeholder="Enter your message here." id="body" rows="3"></textarea>
+              <small class="form-text">We will never share your email with anyone else.</small>
             </div>
-            <div class="bg-dark shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
-            </div>
+            <button type="submit" class="btn btn-secondary">Submit</button>
+          </form>
         </div>
-    </div> -->
+    </main>
 
     <footer class="text-muted">
         <div class="container">
@@ -283,11 +233,6 @@
                     <p class="text-right"><a href="#">Back to top</a></p>
                 </div>
             </div>
-            <!-- <p class="float-right">
-                <a href="#">Back to top</a>
-            </p>
-            <p>&copy; <span class="copyright-year"></span> Victor Curiel Attorney Services</p>
-            <p><a href="mailto:info@victorcurielattorney.services">Contact Us</a></p> -->
         </div>
     </footer>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
