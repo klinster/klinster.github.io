@@ -51,7 +51,7 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <nav class="navbar navbar-expand-lg navbar-dark">
             <div class="container">
                 <a class="navbar-brand" href="#">Victor Curiel Attorney Services</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-mobile"
@@ -61,17 +61,8 @@
 
                 <div class="collapse navbar-collapse" id="navbar-mobile">
                     <ul class="navbar-nav mr-auto">
-                        <!-- <li class="nav-item active">
-                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                        </li> -->
                         <li class="nav-item">
                             <a class="nav-link" href="#our-services">Our Services</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#testimonials">Testimonials</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#about-me">About Me</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#contact-us">Contact</a>
@@ -137,86 +128,26 @@
                 </div>
             </div>
         </div>
-
-        <div id="testimonials" class="bg-dark py-5 text-center">
+        <div id="contact-us" class="py-5 bg-dark">
             <div class="container">
-                <h2 class="h1 pb-5">Testimonials</h2>
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="card mb-4 bg-transparent border-0">
-                            <svg class="bd-placeholder-img card-img-top" width="100%" height="225"
-                                xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice"
-                                focusable="false" role="img" aria-label="Placeholder: Thumbnail">
-                                <title>Placeholder</title>
-                                <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%"
-                                    fill="#eceeef" dy=".3em">Thumbnail</text>
-                            </svg>
-                            <div class="card-body">
-                                <p class="card-text">This is a wider card with supporting text below as
-                                    a natural
-                                    lead-in to additional content. This content is a little bit longer.
-                                </p>
-                                <small class="text-muted">9 mins</small>
-                            </div>
-                        </div>
+                <h2 class="h1 text-center pb-5">Contact Us</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="example@email.com">
                     </div>
-                    <div class="col-md-4">
-                        <div class="card mb-4 bg-transparent border-0">
-                            <svg class="bd-placeholder-img card-img-top" width="100%" height="225"
-                                xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice"
-                                focusable="false" role="img" aria-label="Placeholder: Thumbnail">
-                                <title>Placeholder</title>
-                                <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%"
-                                    fill="#eceeef" dy=".3em">Thumbnail</text>
-                            </svg>
-                            <div class="card-body">
-                                <p class="card-text">This is a wider card with supporting text below as
-                                    a natural
-                                    lead-in to additional content. This content is a little bit longer.
-                                </p>
-                                <small class="text-muted">9 mins</small>
-                            </div>
-                        </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" class="form-control" id="subject" placeholder="Enter your subject here.">
                     </div>
-                    <div class="col-md-4">
-                        <div class="card mb-4 bg-transparent border-0">
-                            <svg class="bd-placeholder-img card-img-top" width="100%" height="225"
-                                xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice"
-                                focusable="false" role="img" aria-label="Placeholder: Thumbnail">
-                                <title>Placeholder</title>
-                                <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%"
-                                    fill="#eceeef" dy=".3em">Thumbnail</text>
-                            </svg>
-                            <div class="card-body">
-                                <p class="card-text">This is a wider card with supporting text below as
-                                    a natural
-                                    lead-in to additional content. This content is a little bit longer.
-                                </p>
-                                <small class="text-muted">9 mins</small>
-                            </div>
-                        </div>
+                    <div class="form-group">
+                        <label for="body">Body</label>
+                        <textarea class="form-control" placeholder="Enter your message here." id="body" rows="3"></textarea>
+                        <small class="form-text">We will never share your email with anyone else.</small>
                     </div>
-                </div>
+                    <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+                </form>
             </div>
-        </div>
-        <div id="contact-us" class="container py-5">
-          <h2 class="h1 text-center pb-5">Contact Us</h2>
-          <form>
-            <div class="form-group">
-              <label for="email">Email</label>
-              <input type="email" class="form-control" id="email" placeholder="example@email.com">
-            </div>
-            <div class="form-group">
-              <label for="subject">Subject</label>
-              <input type="text" class="form-control" id="subject" placeholder="Enter your subject here.">
-            </div>
-            <div class="form-group">
-              <label for="body">Body</label>
-              <textarea class="form-control" placeholder="Enter your message here." id="body" rows="3"></textarea>
-              <small class="form-text">We will never share your email with anyone else.</small>
-            </div>
-            <button type="submit" class="btn btn-secondary">Submit</button>
-          </form>
         </div>
     </main>
 
